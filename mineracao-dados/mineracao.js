@@ -39,7 +39,7 @@ function getSuporte(x, y, transactions){
     return (transactions.length == 0) ? 0.00 : (suporte / transactions.length).toFixed(2);
 }
 
-// Calcula o suporte de dois produtos em todas transações (x => y)
+// Calcula a confiança de dois produtos em todas transações (x => y)
 function getConfianca(x, y, transactions){
     var confianca = 0;
     var registerWithX = 0;
@@ -51,5 +51,5 @@ function getConfianca(x, y, transactions){
                 confianca++;
         }
     }
-    return (registerWithX == 0) ? 0.00 : (confianca / registerWithX).toFixed(2)
+    return (registerWithX == 0) ? 0.00 : (confianca / registerWithX).toFixed(2);
 }
